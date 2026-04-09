@@ -19,3 +19,22 @@ npm install gp-ui-dialian
 pnpm add gp-ui-dialian
 ```
 
+- ## 快速开始
+
+```typescript
+// main.ts
+import { createApp } from "vue";
+import App from "./App.vue";
+
+import GPUI from "gp-ui-dialian";
+import "gp-ui-dialian/dist/style.css";
+
+createApp(App).use(GPUI).mount("#app");
+```
+ ```vue
+<template>
+  <GP-button type="primary">默认按钮</GP-button>
+</template>
+ ```
+
+

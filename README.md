@@ -10,7 +10,7 @@ GreenPaw UI 是一套面向开发者的 Vue 3 组件库，旨在提供优雅的 
 - 📱 **移动端友好**：响应式布局，适配多端设备
 
 - ## 安装
-```bash
+```typescript
 npm install gp-ui-dialian
 
 pnpm add gp-ui-dialian

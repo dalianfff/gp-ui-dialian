@@ -1,0 +1,57 @@
+.GP-progress {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 5px;
+  .GP-progress__line {
+    width: 90%;
+    background-color: rgb(235, 238, 245);
+    border-radius: 100px;
+    .GP-progress__textLine {
+      height: 6px;
+      text-align: right;
+      border-radius: 100px;
+      line-height: 1;
+      white-space: nowrap;
+      transition: width 0.6s ease;
+    }
+    .GP-progress__ttext {
+      height: 26px;
+      line-height: 26px;
+    }
+  }
+  .GP-progress__content {
+    min-width: 8%;
+    font-size: 14.4px;
+    color: rgb(96, 98, 102);
+    text-align: left;
+  }
+  .GP-progress__status {
+    width: 8%;
+    text-align: left;
+  }
+}
+
+.GP-progress__circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 100px;
+  text-align: center;
+  .GP-progress__svg {
+    position: relative;
+    transform: rotate(-90deg);
+    .GP-progress__svg-progress {
+      stroke-linecap: round;
+      transition: all 0.6s linear;
+    }
+  }
+  .GP-progress__mark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

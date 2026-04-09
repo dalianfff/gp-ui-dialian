@@ -1,0 +1,39 @@
+// 中性色
+$color-white: #ffffff;
+$color-black: #000000;
+
+// 功能色（保持直观视觉）
+// 主色（薄荷绿）
+$color-primary: #8bf40b;
+$color-primary-hover-bg: #9bff28; // hover背景色（亮10%）
+$color-primary-hover-border: #8bf40b; // hover边框色
+$color-primary-hover-color: #ffffff; // hover文字色
+$color-primary-active-bg: #76d800; // active背景色（暗10%）
+
+// 成功色
+$color-success: #67c23a;
+$color-success-hover-bg: #77d44a;
+$color-success-hover-border: #67c23a;
+$color-success-hover-color: #ffffff;
+$color-success-active-bg: #55a82d;
+
+// 警告色
+$color-warning: #e6a23c;
+$color-warning-hover-bg: #f0b055;
+$color-warning-hover-border: #e6a23c;
+$color-warning-hover-color: #000000;
+$color-warning-active-bg: #d0902e;
+
+// 危险色
+$color-danger: #f56c6c;
+$color-danger-hover-bg: #f78484;
+$color-danger-hover-border: #f56c6c;
+$color-danger-hover-color: #ffffff;
+$color-danger-active-bg: #e85858;
+
+// 信息色
+$color-info: #909399;
+$color-info-hover-bg: #9da0a6;
+$color-info-hover-border: #909399;
+$color-info-hover-color: #000000;
+$color-info-active-bg: #808288;

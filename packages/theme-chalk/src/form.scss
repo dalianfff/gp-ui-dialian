@@ -1,0 +1,48 @@
+.GP-form-item {
+  display: flex;
+  .GP-form-item__label {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 12px;
+    height: 32px;
+    line-height: 32px;
+  }
+  .GP-form-item__content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    .GP-form-item__error {
+      color: #e95943;
+      font-size: 12px;
+    }
+  }
+}
+.GP-form {
+  --form-item-gap: 22px;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  /* ========= ✅ 外边框 + 内边距 + 圆角 ========= */
+  border: 1px solid #e5e6eb; /* 灰色边框 */
+  border-radius: 8px; /* 圆角 */
+  padding: 24px; /* 内部留白，内容不会贴着边框 */
+  background-color: #fff; /* 白色背景 */
+
+  /* 子项间距 */
+  .GP-form-item {
+    margin-bottom: var(--form-item-gap);
+  }
+
+  /* 标签对齐 */
+  .GP-form-item__label {
+    width: var(--form-label-width);
+    white-space: nowrap;
+  }
+
+  .GP-form-item__content {
+    min-width: 0;
+    flex: 1;
+  }
+}

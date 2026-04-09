@@ -1,0 +1,63 @@
+.GP-upload {
+  width: 100%;
+  font-size: 0;
+  .GP-upload__drop {
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+      border-color: #409eff;
+    }
+    .GP-upload__drop-icon {
+      display: flex;
+      justify-content: center;
+    }
+    .GP-upload__drop-word {
+      display: flex;
+      justify-content: center;
+      .GP-upload__word1 {
+        color: #606266;
+        margin-top: 16px;
+        font-size: 14px;
+      }
+      .GP-upload__word2 {
+        color: rgb(27, 176, 221);
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 16px;
+        margin-left: 4px;
+      }
+    }
+  }
+  .GP-upload__file {
+    display: flex;
+    width: 360px;
+    margin-bottom: 3px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background: #fafafa;
+    border-radius: 4px;
+    span {
+      font-size: 14px;
+      max-width: 220px;
+      overflow: hidden;
+      white-space: nowrap; // 不换行
+      text-overflow: ellipsis; // 多余显示...
+    }
+  }
+  input {
+    width: 0 !important;
+    height: 0 !important;
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "GreenPaw UI Component Library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm -C play dev",
+    "docs:dev": "pnpm -C docs dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.32.1",
+  "devDependencies": {
+    "@types/node": "^24.12.0",
+    "@vicons/ionicons5": "^0.13.0",
+    "async-validator": "^4.2.5",
+    "sass": "^1.98.0",
+    "typescript": "^5.9.3",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.30"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1",
+    "components": "^0.1.0",
+    "mitt": "^3.0.1",
+    "theme-chalk": "1.0.0-dev.9",
+    "utils": "^0.3.1"
+  }
+}

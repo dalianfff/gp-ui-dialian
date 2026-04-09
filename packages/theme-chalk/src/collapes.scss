@@ -1,0 +1,65 @@
+.GP-collapse {
+  width: 45em;
+  padding: 1.5em;
+  height: max-content;
+  border: 1px solid #524d4d;
+  border-radius: 5px;
+  .GP-collapse__ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    .GP-collapse__li {
+      .GP-collapse__header {
+        height: 50px;
+        line-height: 50px;
+        margin-top: 1em;
+        padding: 0 10px;
+        border-top: 0.2px solid #9a9696;
+        border-bottom: 0.2px solid #9a9696;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        background-color: #d0eec5;
+        .GP-collapse__title {
+          font-size: 22px;
+        }
+        .GP-collapse__icon {
+          font-size: 28px;
+        }
+      }
+      .GP-collapse__content {
+        background-color: #e0eac6;
+        line-height: 1.769;
+        width: fit-content;
+        height: 100px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+.icon-select {
+  transform: rotate(90deg);
+  transition: all 1s;
+}
+.icon-unselect {
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+
+// 过渡动画
+.GP-collapse1-enter-from,
+.GP-collapse1-leave-to {
+  height: 0 !important;
+}
+
+.GP-collapse1-enter-active,
+.GP-collapse1-leave-active {
+  transition: all 1s ease !important;
+  overflow: hidden !important;
+}
+
+.GP-collapse1-enter-to,
+.GP-collapse1-leave-from {
+  height: 100px !important;
+}

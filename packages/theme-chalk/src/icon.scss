@@ -1,0 +1,16 @@
+.GP-icon {
+  /* 核心：宽高设为 20px，保证 20×20 尺寸 */
+  width: 20px;
+  height: 20px;
+  /* 字体大小设为 20px，让图标填满容器 */
+  font-size: 20px;
+  /* 保持原有样式 */
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0; /* 去掉 padding 避免容器变大 */
+  /* 让图标居中显示（可选） */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

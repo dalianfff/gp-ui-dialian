@@ -1,0 +1,82 @@
+.GP-message__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+  .GP-message__container-1 {
+    position: absolute;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 99999 !important;
+    transition: top 0.3s ease;
+    .GP-message {
+      position: relative;
+      left: 50%;
+      padding: 12px 20px;
+      border-radius: 8px;
+      color: white;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .GP-message__info {
+      background-color: #7dbde8;
+    }
+
+    .GP-message__success {
+      background-color: #79e5a6;
+    }
+
+    .GP-message__warning {
+      background-color: #ebd475;
+    }
+
+    .GP-message__error {
+      background-color: #ec8478;
+    }
+
+    .GP-message__icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .GP-message__message {
+      flex: 1;
+      word-break: break-word;
+    }
+    .GP-message__close {
+      margin-left: 12px;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 20px;
+      color: #0e0d0d;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateX(-50%) translateY(-20px);
+    }
+  }
+}

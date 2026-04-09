@@ -1,0 +1,71 @@
+.GP-alert {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15px 16px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  .GP-alert__global-ellipsis {
+    white-space: nowrap; // 不换行
+    text-overflow: ellipsis; // 显示省略号
+    overflow: hidden; // 隐藏超出部分
+  }
+  .GP-alert__icon {
+    padding: 0 5px 0 0;
+  }
+  .GP-alert__content {
+    overflow: auto;
+    padding-left: 10px;
+  }
+  .GP-alert__title {
+    margin: 0;
+  }
+  .GP-alert__desc {
+    margin: 0;
+  }
+  .GP-alert__close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
+}
+.GP-alert__error {
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  color: #a94442;
+}
+.GP-alert__success {
+  background-color: #c6e7bb;
+  border-color: #90c280;
+  color: #367e1f;
+}
+.GP-alert__info {
+  background-color: #cfe2ff;
+  border-color: #b6d4fe;
+  color: #084298;
+}
+.GP-alert__warning {
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+  color: #664d03;
+}
+// 开始进入 / 结束离开：透明 + 右移 100px
+.GP-alert-fade-enter-from,
+.GP-alert-fade-leave-to {
+  transform: translateX(100px);
+  opacity: 0;
+}
+
+// 进入完成 / 开始离开：不透明
+.GP-alert-fade-enter-to,
+.GP-alert-fade-leave-from {
+  opacity: 1;
+}
+
+// 过渡时间 0.5 秒
+.GP-alert-fade-enter-active,
+.GP-alert-fade-leave-active {
+  transition: all 0.5s;
+}

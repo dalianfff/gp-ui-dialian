@@ -6,6 +6,11 @@ export default defineConfig({
   base: "/gp-ui-dalian/",
   title: "GreenPaw UI Component",
   description: "A VitePress Site",
+
+  ssr: false, // 关闭 SSR（核心！解决 getSSRProps 报错）
+  ignoreDeadLinks: true, // 忽略死链接
+  outDir: "./.vitepress/dist", // 明确输出目录
+
   vite: {},
   themeConfig: {
     logo: "/蓝猫.png",

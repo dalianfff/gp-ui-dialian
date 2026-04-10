@@ -1,8 +1,10 @@
 # 🌱 GreenPaw UI (GP-UI)
+
 > 一个基于 Vue 3 + TypeScript 构建的轻量级 UI 组件库
 >
 > ## 🌟 特性简介
-GreenPaw UI 是一套面向开发者的 Vue 3 组件库，旨在提供优雅的 UI 设计与高性能的底层实现。
+>
+> GreenPaw UI 是一套面向开发者的 Vue 3 组件库，旨在提供优雅的 UI 设计与高性能的底层实现。
 
 - ⚡ **性能优先**：基于 Vite 构建，按需引入，减小打包体积
 - 🔧 **TypeScript 支持**：提供完整的类型声明，开发更安全
@@ -11,10 +13,13 @@ GreenPaw UI 是一套面向开发者的 Vue 3 组件库，旨在提供优雅的 
 
 - ## 安装
 - ### npm
+
 ```typescript
 npm install gp-ui-dialian
 ```
+
 - ### pnpm
+
 ```typescript
 pnpm add gp-ui-dialian
 ```
@@ -31,10 +36,13 @@ import "gp-ui-dialian/dist/style.css";
 
 createApp(App).use(GPUI).mount("#app");
 ```
- ```vue
+
+```vue
 <template>
   <GP-button type="primary">默认按钮</GP-button>
 </template>
- ```
+```
 
+- ## 在线文档
 
+https://dalianfff.github.io/gp-ui-dialian/

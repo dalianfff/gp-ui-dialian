@@ -3,6 +3,7 @@ import { set_sidebar } from "./utils/auto_sidebar.mjs";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/gp-ui-dalian/",
   title: "GreenPaw UI Component",
   description: "A VitePress Site",
   vite: {},
@@ -20,7 +21,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
+      { icon: "github", link: "https://github.com/dalianfff/gp-ui-dialian" },
     ],
     //底部配置
     footer: {

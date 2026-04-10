@@ -6,6 +6,7 @@
 
 ### hover 触发
 
+<ClientOnly>
 <GP-dropdown trigger="hover" :style="{'margin':'20px'}">
   <button class="GP-dropdown__button">
     <span class="GP-dropdown__link">
@@ -20,6 +21,7 @@
     <GP-dropdown-item>星期四</GP-dropdown-item>
   </GP-dropdown-menu>
 </GP-dropdown>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -46,6 +48,7 @@
 
 ### click 触发
 
+<ClientOnly>
 <GP-dropdown trigger="click" :style="{'margin':'20px'}">
   <button class="GP-dropdown__button">
     <span class="GP-dropdown__link">
@@ -60,6 +63,7 @@
     <GP-dropdown-item>星期四</GP-dropdown-item>
   </GP-dropdown-menu-click>
 </GP-dropdown>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>

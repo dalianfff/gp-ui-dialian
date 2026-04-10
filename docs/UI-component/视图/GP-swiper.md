@@ -4,6 +4,7 @@
 
 ## 基础用法
 
+<ClientOnly>
 <GP-swiper v-model="swiper" :width="600">
   <GP-swiper-item>
     <div style="color: #474444; text-align: center; width: 100%; height: 100%; line-height: 260px; background-color: #c1e1b9;">一</div>
@@ -18,6 +19,7 @@
     <div style="color: #474444; text-align: center; width: 100%; height: 100%; line-height: 260px; background-color: #d1fc6b;">四</div>
   </GP-swiper-item>
 </GP-swiper>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -50,6 +52,7 @@
 
 通过`autoplay`控制是否自动播放，`autoplayTime`控制自动播放的时间
 
+<ClientOnly>
 <GP-swiper v-model="swiper1" :width="600" autoplay :autoplayTime="3000">
   <GP-swiper-item>
     <div style="color: #474444; text-align: center; width: 100%; height: 100%; line-height: 260px; background-color: #c1e1b9;">一</div>
@@ -64,6 +67,7 @@
     <div style="color: #474444; text-align: center; width: 100%; height: 100%; line-height: 260px; background-color: #d1fc6b;">四</div>
   </GP-swiper-item>
 </GP-swiper>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -96,6 +100,7 @@
 
 通过 anim 属性来控制切换的放向，支持 default左右切换(默认)、updown上线切换
 
+<ClientOnly>
 <div style="display:flex;flex-wrap:wrap; margin:20px">
   <GP-swiper v-model="swiper2" :width="300">
     <GP-swiper-item>
@@ -126,6 +131,7 @@
     </GP-swiper-item>
   </GP-swiper>
 </div>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -175,6 +181,7 @@
 
 通过indicator属性决定控制器位置，inside:内部(默认) outside:外部 none:不显示
 
+<ClientOnly>
 <GP-swiper v-model="swiper4" :width="600" indicator="outside">
   <GP-swiper-item>
     <div style="color: #474444; text-align: center; width: 100%; height: 100%; line-height: 260px; background-color: #c1e1b9;">一</div>
@@ -189,6 +196,7 @@
     <div style="color: #474444; text-align: center; width: 100%; height: 100%; line-height: 260px; background-color: #d1fc6b;">四</div>
   </GP-swiper-item>
 </GP-swiper>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>

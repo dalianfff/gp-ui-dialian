@@ -8,30 +8,36 @@
 
 <!-- ✅ 直接写组件，会渲染成真实按钮 -->
 
+<ClientOnly>
 <GP-button>默认按钮</GP-button>
 <GP-button type="primary" style="margin: 0 12px 12px 0 ">主要按钮</GP-button>
 <GP-button type="success" style="margin: 0 12px 12px 0 ">成功按钮</GP-button>
 <GP-button type="info" style="margin: 0 12px 12px 0 ">信息按钮</GP-button>
 <GP-button type="warning" style="margin: 0 12px 12px 0 ">警告按钮</GP-button>
 <GP-button type="danger" style="margin: 0 12px 12px 0 ">危险按钮</GP-button>
+</ClientOnly>
 
 <br>
 
+<ClientOnly>
 <GP-button>圆角按钮</GP-button>
 <GP-button type="primary" round style="margin: 0 12px 12px 0 ">主要按钮</GP-button>
 <GP-button type="success" round style="margin: 0 12px 12px 0 ">成功按钮</GP-button>
 <GP-button type="info" round style="margin: 0 12px 12px 0 ">信息按钮</GP-button>
 <GP-button type="warning" round style="margin: 0 12px 12px 0 ">警告按钮</GP-button>
 <GP-button type="danger" round style="margin: 0 12px 12px 0 ">危险按钮</GP-button>
+</ClientOnly>
 
 <br>
 
+<ClientOnly>
 <GP-button>圆形按钮</GP-button>
 <GP-button type="primary" circle style="margin: 0 12px 12px 0 ">主要</GP-button>
 <GP-button type="success" circle style="margin: 0 12px 12px 0 ">成功</GP-button>
 <GP-button type="info" circle style="margin: 0 12px 12px 0 ">信息</GP-button>
 <GP-button type="warning" circle style="margin: 0 12px 12px 0 ">警告</GP-button>
 <GP-button type="danger" circle style="margin: 0 12px 12px 0 ">危险</GP-button>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -76,12 +82,14 @@
 
 ## 禁用状态
 
+<ClientOnly>
 <GP-button disabled>禁用按钮</GP-button>
 <GP-button disabled type="primary" style="margin: 0 12px 12px 0 ">主要按钮</GP-button>
 <GP-button disabled type="success" style="margin: 0 12px 12px 0 ">成功按钮</GP-button>
 <GP-button disabled type="info" style="margin: 0 12px 12px 0 ">信息按钮</GP-button>
 <GP-button disabled type="warning" style="margin: 0 12px 12px 0 ">警告按钮</GP-button>
 <GP-button disabled type="danger" style="margin: 0 12px 12px 0 ">危险按钮</GP-button>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -102,11 +110,13 @@
 
 ## 加入图标
 
+<ClientOnly>
 <GP-button icon="AccessibilitySharp" type="primary" style="margin: 0 12px 12px 0 ">主要按钮</GP-button>
 <GP-button icon="AccessibilitySharp" type="success" style="margin: 0 12px 12px 0 ">成功按钮</GP-button>
 <GP-button icon="AccessibilitySharp" type="info" style="margin: 0 12px 12px 0 ">信息按钮</GP-button>
 <GP-button icon="AccessibilitySharp" type="warning" style="margin: 0 12px 12px 0 ">警告按钮</GP-button>
 <GP-button icon="AccessibilitySharp" type="danger" style="margin: 0 12px 12px 0 ">危险按钮</GP-button>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>

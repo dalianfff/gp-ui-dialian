@@ -6,9 +6,11 @@
 
 <!-- ✅ 直接写组件，会渲染成真实按钮 -->
 
+<ClientOnly>
 <GP-icon><AccessibilitySharp></AccessibilitySharp></GP-icon>
 <GP-icon color="green"><AccessibilitySharp></AccessibilitySharp></GP-icon>
 <GP-icon color="red" size="30"><AccessibilitySharp></AccessibilitySharp></GP-icon>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>

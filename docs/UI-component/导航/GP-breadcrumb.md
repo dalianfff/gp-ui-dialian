@@ -6,12 +6,14 @@
 
 在 GP-breadcrumb 中使用 GP-breadcrumb-item 标签表示从首页开始的每一级。
 
+<ClientOnly>
 <GP-breadcrumb>
   <GP-breadcrumb-item :to="{ path: '/' }">home</GP-breadcrumb-item>
   <GP-breadcrumb-item>home 内容</GP-breadcrumb-item>
   <GP-breadcrumb-item to="/">list</GP-breadcrumb-item>
   <GP-breadcrumb-item>list 内容</GP-breadcrumb-item>
 </GP-breadcrumb>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -32,12 +34,14 @@
 
 通过设置GP-breadcrumb中参数`separator`来设置分隔符的样式
 
+<ClientOnly>
 <GP-breadcrumb separator="🐱">
   <GP-breadcrumb-item :to="{ path: '/' }">home</GP-breadcrumb-item>
   <GP-breadcrumb-item>home 内容</GP-breadcrumb-item>
   <GP-breadcrumb-item to="/">list</GP-breadcrumb-item>
   <GP-breadcrumb-item>list 内容</GP-breadcrumb-item>
 </GP-breadcrumb>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>

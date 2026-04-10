@@ -4,7 +4,9 @@
 
 ## 基础用法
 
+<ClientOnly>
 <GP-switch v-model="Switch"></GP-switch>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -22,7 +24,9 @@
 
 ## 禁用状态
 
+<ClientOnly>
 <GP-switch disabled v-model="Switchd"></GP-switch>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -40,7 +44,9 @@
 
 ## 事件回调
 
+<ClientOnly>
 <GP-switch v-model="Switch1" @change="handleChange"></GP-switch>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -68,7 +74,9 @@
 
 通过 onswitch-text 与 unswitch-text 属性, 设置不同状态的描述文字。
 
+<ClientOnly>
 <GP-switch v-model="Switch2" onswitch-text="开" unswitch-text="关"></GP-switch>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -88,10 +96,12 @@
 
 通过size属性，设置尺寸。(`lg`,`md`,`sm`,`xs`)
 
+<ClientOnly>
 <GP-switch size="lg" v-model="Switch3"></GP-switch>
 <GP-switch size="md" v-model="Switch3"></GP-switch>
 <GP-switch size="sm" v-model="Switch3"></GP-switch>
 <GP-switch size="xs" v-model="Switch3"></GP-switch>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>

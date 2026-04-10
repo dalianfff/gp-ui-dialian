@@ -6,7 +6,9 @@
 
 可以展开多个面板
 
+<ClientOnly>
 <GP-collapse :posts="list"></GP-collapse>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -47,7 +49,9 @@
 
 每次只能展开一个面板
 
+<ClientOnly>
 <GP-collapse :posts="list" :types="false"></GP-collapse>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>

@@ -4,7 +4,9 @@
 
 ## 基础用法
 
+<ClientOnly>
 <GP-input v-model="inputVal" placeholder="请输入内容"></GP-input>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -26,7 +28,9 @@
 
 通过 `disabled` 来指定是否禁用input组件
 
+<ClientOnly>
 <GP-input v-model="inputVal" disabled></GP-input>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -48,7 +52,9 @@
 
 用 `clearable` 属性，可以得到一个一键清空的输入框。
 
+<ClientOnly>
 <GP-input v-model="inputVal" placeholder="请输入内容" clearable></GP-input>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -71,7 +77,9 @@
 当 `type = "password` 时，输入框的类型为密码框。
 用 `show-password`属性时，会得到一个可以控制显示隐藏的密码框。
 
+<ClientOnly>
 <GP-input v-model="inputVal" type="password" placeholder="请输入内容" showPassword></GP-input>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>

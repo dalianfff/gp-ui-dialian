@@ -4,7 +4,9 @@
 
 ## 基础用法
 
+<ClientOnly>
 <GP-checkbox v-model1="checkbox1">复选框</GP-checkbox>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -25,9 +27,10 @@
 ## 禁用状态
 
 多选框不可用状态
-
+<ClientOnly>
 <GP-checkbox disabled>Disabled</GP-checkbox>
 <GP-checkbox v-model1="checkbox1">Not Disabled</GP-checkbox>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -50,7 +53,9 @@
 
 适用于多个勾选框绑定到同一个数组的情景。
 
+<ClientOnly>
 <GP-checkbox v-for="(item, index) in showList" :key="index" :label="item"></GP-checkbox>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -71,7 +76,9 @@
 
 ## 事件回调
 
+<ClientOnly>
 <GP-checkbox v-model1="checkbox1" @change="handleChange">事件回调</GP-checkbox>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>

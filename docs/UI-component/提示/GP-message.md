@@ -6,7 +6,9 @@
 
 从顶部出现，3秒后消失
 
+<ClientOnly>
 <GP-button round type="primary" @click="showMsg1">showMsg</GP-button>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -33,10 +35,12 @@
 
 用来显示 [成功 警告 消息 错误] 的操作反馈
 
+<ClientOnly>
 <GP-button round type="success" @click="showMsg2" style="margin: 0 12px 12px 0 ">success</GP-button>
 <GP-button round type="warning" @click="showMsg3" style="margin: 0 12px 12px 0 ">warning</GP-button>
 <GP-button round type="primary" @click="showMsg1" style="margin: 0 12px 12px 0 ">info</GP-button>
 <GP-button round type="danger" @click="showMsg4" style="margin: 0 12px 12px 0 ">error</GP-button>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -80,7 +84,9 @@
 
 可以自由设置自动关闭时间
 
+<ClientOnly>
 <GP-button round type="primary" @click="showMsg5">time</GP-button>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -108,10 +114,12 @@
 
 可以添加关闭按钮
 
+<ClientOnly>
 <GP-button round type="success" @click="showMsg22" style="margin: 0 12px 12px 0 ">success</GP-button>
 <GP-button round type="warning" @click="showMsg33" style="margin: 0 12px 12px 0 ">warning</GP-button>
 <GP-button round type="primary" @click="showMsg11" style="margin: 0 12px 12px 0 ">info</GP-button>
 <GP-button round type="danger" @click="showMsg44" style="margin: 0 12px 12px 0 ">error</GP-button>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>

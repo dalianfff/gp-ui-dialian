@@ -6,7 +6,9 @@
 
 通过点击上传文件
 
+<ClientOnly>
 <GP-upload @changeUpload="changeUpload" @deleteUpload="deleteUpload"></GP-upload>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
@@ -33,7 +35,9 @@
 
 通过点击/拖拽上传文件
 
+<ClientOnly>
 <GP-upload :drop="true" @dropUpload="dropUpload" @deleteUpload="deleteUpload"></GP-upload>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>

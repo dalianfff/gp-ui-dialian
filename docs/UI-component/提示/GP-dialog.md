@@ -4,8 +4,10 @@
 
 ## 基础用法
 
+<ClientOnly>
 <GP-button type="primary" @click="changeView">dialog</Gp-button>
 <GP-dialog :visible="visible" @confirm="handleConfirmButton" @cancel="handleCancelButton"> </GP-dialog>
+</ClientOnly>
 
 <script lang="ts" setup>
   import { ref } from 'vue';
@@ -64,8 +66,10 @@
 
 通过 `title` `width` 和 `top` 来自定义内容。
 
+<ClientOnly>
 <GP-button type="primary" @click="changeView1">自定义</GP-button>
 <GP-dialog title="自定义标题" width="60%" top="200px" :visible="visible1" @confirm="handleConfirmButton1" @cancel="handleCancelButton1"><li>1</li><li>2</li><li>3</li></GP-dialog>
+</ClientOnly>
 
 <details style="cursor: pointer">
   <summary>展开查看</summary>
